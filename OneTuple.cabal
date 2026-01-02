@@ -1,7 +1,6 @@
 cabal-version:      1.12
 name:               OneTuple
-version:            0.4.2
-x-revision:         1
+version:            0.4.2.1
 synopsis:           Singleton Tuple
 category:           Data
 description:
@@ -31,8 +30,9 @@ tested-with:
    || ==9.4.8
    || ==9.6.4
    || ==9.8.6
-   || ==9.10.1
-   || ==9.12.1
+   || ==9.10.2
+   || ==9.12.2
+   || ==9.14.1
 
 extra-source-files: Changelog.md
 
@@ -49,7 +49,7 @@ library
 
   hs-source-dirs:   src
   build-depends:
-      base              >=4.12 && <4.22
+      base              >=4.12 && <4.23
     , template-haskell
 
   if impl(ghc >=9.0)
@@ -90,4 +90,3 @@ test-suite th
   build-depends:
       base
     , OneTuple
-    , template-haskell
